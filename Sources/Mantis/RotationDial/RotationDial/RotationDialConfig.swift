@@ -32,7 +32,7 @@ public struct RotationDialConfig {
     public var backgroundColor: UIColor = .clear
     public var bigScaleColor: UIColor = .lightGray
     public var smallScaleColor: UIColor = .lightGray
-    public var indicatorColor: UIColor = .lightGray
+    public var indicatorColor: UIColor = .yellow
     public var numberColor: UIColor = .lightGray
     public var centerAxisColor: UIColor = .lightGray
 
