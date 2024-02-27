@@ -341,7 +341,7 @@ extension CropViewController {
     
     private func setStackViewAxis() {
         if Orientation.treatAsPortrait {
-            stackView?.axis = .horizontal
+            stackView?.axis = .vertical
         } else if Orientation.isLandscape {
             stackView?.axis = .horizontal
         }
