@@ -358,8 +358,8 @@ extension CropViewController {
         stackView?.removeArrangedSubview(cropToolbar)
         
         if Orientation.treatAsPortrait || Orientation.isLandscapeRight {
-            stackView?.addArrangedSubview(cropStackView)
             stackView?.addArrangedSubview(cropToolbar)
+            stackView?.addArrangedSubview(cropStackView)
         } else if Orientation.isLandscapeLeft {
             stackView?.addArrangedSubview(cropToolbar)
             stackView?.addArrangedSubview(cropStackView)
