@@ -137,7 +137,7 @@ private func buildCropMaskViewManager(with cropViewConfig: CropViewConfig) -> Cr
         visualEffectView.overLayerFillColor = color.cgColor
     }
     
-    return CropMaskViewManager(dimmingView: dimmingView, visualEffectView: visualEffectView)
+    return CropMaskViewManager(visualEffectView: visualEffectView)
 }
 
 private func setupRotationControlViewIfNeeded(withConfig cropViewConfig: CropViewConfig,

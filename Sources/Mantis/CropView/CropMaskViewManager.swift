@@ -9,24 +9,19 @@
 import UIKit
 
 final class CropMaskViewManager {
-    private let dimmingView: CropMaskProtocol
     private let visualEffectView: CropMaskProtocol
     private(set) var maskViews: [CropMaskProtocol]
     
-    init(dimmingView: CropMaskProtocol,
-         visualEffectView: CropMaskProtocol) {
-        self.dimmingView = dimmingView
+    init(visualEffectView: CropMaskProtocol) {
         self.visualEffectView = visualEffectView
-        maskViews = [dimmingView, visualEffectView]
+        maskViews = [visualEffectView]
     }
         
     private func showDimmingBackground() {
-        dimmingView.alpha = 1
         visualEffectView.alpha = 0
     }
 
     private func showVisualEffectBackground() {
-        self.dimmingView.alpha = 0
         self.visualEffectView.alpha = 1
     }
 }
