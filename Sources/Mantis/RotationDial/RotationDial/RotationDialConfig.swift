@@ -30,11 +30,11 @@ public struct RotationDialConfig {
     public var orientation: Orientation = .normal
 
     public var backgroundColor: UIColor = .clear
-    public var bigScaleColor: UIColor = .lightGray
-    public var smallScaleColor: UIColor = .lightGray
+    public var bigScaleColor: UIColor = .black
+    public var smallScaleColor: UIColor = .black
     public var indicatorColor: UIColor = .yellow
-    public var numberColor: UIColor = .lightGray
-    public var centerAxisColor: UIColor = .lightGray
+    public var numberColor: UIColor = .black
+    public var centerAxisColor: UIColor = .black
 
     public var theme: Theme = .dark {
         didSet {
